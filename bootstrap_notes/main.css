@@ -1,0 +1,22 @@
+/*
+What: bootstrap-examples style sheet
+Creator: christopher aguirre
+Date created: Dec. 29t, 2019
+Date last modified: Dec. 29th, 2019
+<link href="styles/main.css" rel="stylesheet" type="text/css" />
+*/
+
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav .btn {
+  background-color: #5b7d87;
+  color: #fef9ff;
+}
+nav .btn:hover {
+    font-weight: bold;
+}
