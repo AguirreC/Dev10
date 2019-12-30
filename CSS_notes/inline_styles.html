@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Style Sheets</title>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <p style="color:red;font-weight:bold;">These fields are required. </p>
+    </body>
+</html>
+
+<!-- Inline styles are styles applied to a particular HTML element through the element's style attribute.
+They are considered inline because the styles are written in line with the HTML; the style attribute is part of the HTML.
+These inline styles are great if you want to test a style on an object before moving the style to another location
+or if you have only one object that needs a particular CSS style.
+
+Inline styles take precedence over internal or external style sheets.
+This means that if different styles are defined for a specific element
+in the HTML page, using an external sheet,
+an internal sheet, and an inline style, the inline style overrides any other styles,
+and the browser will format the content using the inline styles.
+
+Note that the styles in an inline style only apply to a particular element,
+so you cannot use inline styles for multiple elements without actually copying
+and pasting the style set from one element to the next in the HTML content -
+a process that is time-consuming and can lead to errors.
+
+Another pitfall of inline styles is that they cannot be used for pseudo-elements
+and pseudo-classes. This means that if you are using a colon (:) in your
+CSS selector, you will not be able to apply an inline style to it. Inline styles
+also cannot be used for styling the multiple states of links such as hover,
+visited, and active; those can only be styled in internal style sheets and
+external style sheets  -->
+
+
+<!-- Internal style sheets are CSS rules that are grouped together inside the HTML style tags in the <head> of an HTML document.
+  These styles automatically apply to all relevant content on the page,
+  making it easier to ensure that all elements with specific attributes are formatted the same throughout the page.
+
+Note that these styles are page-specific, so they cannot be shared across multiple pages.
+Also, because they are part of the page itself, they also can slow down how long
+it takes a page to load. However, internal style sheets are a good choice if you
+have a few styles that will apply only to specific elements on a single page.
+
+Here is an example of some styles that may appear in an internal style sheet -->
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .warning {
+    font-weight: bold;
+    color: red;
+  }
+
+  div .warning {
+    font-style: italic;
+  }
+</style>
+
+
+
+<!-- External style sheets allow you to share styles across multiple pages,
+allowing you to create a consistent look and feel throughout your website.
+As the term implies, an external style sheet is literally a separate file that
+contains only CSS styles. Like an HTML page, it can only contain text, but the
+content is formatted using style set syntax, and the filename must end in .css.
+Most code editors that support HTML also support CSS, so you can use the same
+tools to write both HTML and CSS code.
+
+There are two ways to connect to an external style sheet: through the link HTML
+element or through the CSS @import command.
+
+In an HTML document, you could link to an external style sheet like this -->
+
+<link rel="stylesheet"
+      type="text/css"
+      href="sampleStyles.css" />
+
+<!-- The rel attribute is set to stylesheet, which identifies that we are linking to a style sheet file.
+
+The type attribute is set to text/css; this identifies that we are linking to a file that contains CSS.
+
+The href attribute tells the browser where to find the external .css file;
+in this example, the file is named sampleStyles.css and it is in the same directory as the current HTML file.
+
+In this case, the CSS file is part of the website, and the path used in the href
+attribute describes where the file is located within the website, using an
+address relative to the current HTML page  -->
+
+
+<!-- When to Use Which? -->
+<!-- An inline style applies to one specific object.
+If there is a particular object that needs to be styled precisely, an inline style may be the way to go.
+
+An internal style sheet applies to one specific page.
+If there is a style that applies to multiple elements on a page, an internal
+style sheet may be easier to manage than dealing with copied-and-pasted styles in inline styles for each element.
+
+An external style sheet applies to any page that references it.
+If there is a consistent look and feel that applies to multiple pages,
+an external style sheet may be the way to go.  -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>id Elements</title>
+        <!-- In the CSS rule, we use a hashtag (#) to indicate that we want to target an id value, followed immediately by the value itself.
+          So, to highlight More Awesome Product and give it a strong red dashed border, we use the selector #product2 in the CSS rule.
+        ID selectors start with the # symbol, also known as the number sign, pound sign, hashtag, or octothorpe.
+        Only the div with id="product2" takes on the style in the rule, and the surrounding divs remain unaffected -->
+        <style>
+          #product1, #product3 {
+            color: blue;
+          }
+          #product2
+          {
+            border: 3px red dashed;
+          }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div id="product1">
+            <h2>Awesome Product</h2>
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli pappardelle
+              elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p>
+        </div><!-- We want to feature More Awesome Product so that it stands out. With the HTML in its current state, we do not have an easy way of isolating just that product.
+        This is when using an id attribute becomes useful. -->
+        <div id="product2">
+            <h2>More Awesome Product</h2>
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli
+              pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p>
+        </div>
+        <div id="product3">
+            <h2>Most Awesome Product</h2>
+            <p>Pasta ipsum dolor sit amet sagne 'ncannulate bucatini tuffoli bavette penne. Tuffoli pastina farfalline linguine campanelle garganelli lagane scialatelli
+              pappardelle elicoidali ditalini. Quadrefiore orecchiette croxetti spiralini strozzapreti garganelli fettucelle. </p>
+        </div>
+    </body>
+</html>

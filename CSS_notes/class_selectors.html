@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class selectors</title>
+        <!-- By default, we do not need these warnings to show, so we can hide them with CSS. When we want to target a class,
+        the selector starts with a dot (.), like .warning. Because the class applies to both div and p elements,
+         we can use a single rule to target all of them Class selectors start with a period (.).
+          We use class selectors when there are multiple elements that need to have the same styles but cannot necessarily be grouped by tag -->
+        <style>
+          .warning {
+            display: none;
+          }
+        </style>
+    </head>
+
+    <body>
+        <div class="warning">
+            <p>The following errors occurred:</p>
+        </div>
+        <p class="warning">First Name is required.</p>
+        <label for="firstName">First Name</label>
+        <input type="textbox" name="firstName"/>
+        <p class="warning">Last Name is required.</p>
+        <label for="lastName">Last Name</label>
+        <input type="textbox" name="lastName"/>
+    </body>
+</html>
