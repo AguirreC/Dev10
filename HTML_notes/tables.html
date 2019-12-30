@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--
+    Name: Your Name
+    Date Created: Today's date
+    Most recent revision:
+-->
+<html lang="en">
+    <head>
+        <title>Tables in HTML</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Tables in HTML</h1>
+
+                <table border="1">
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                  </tr>
+
+                  <tr>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>555-1212</td>
+                  </tr>
+
+                  <tr>
+                    <td>James</td>
+                    <td>Honeycut</td>
+                    <td>867-5309</td>
+                  </tr>
+
+                  <tr>
+                    <td>Dr.</td>
+                    <td>ThunderBuns</td>
+                    <td>889-6040</td>
+                  </tr>
+                </table>
+
+              <h2>Table with Caption</h2>
+
+                <table border="1"> <!-- BY adding <caption></caption> element we can label the table itslef
+                A table caption is added by inserting a <caption> </caption> element immediately after the opening <table> tag -->
+                  <caption>Contact Information</caption>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                  </tr>
+
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>555-1212</td>
+                  </tr>
+
+                  <tr>
+                    <td>Sally</td>
+                    <td>Smith</td>
+                    <td>555-1123</td>
+                  </tr>
+
+                  <tr>
+                    <td>Sam</td>
+                    <td>Jones</td>
+                    <td>555-4321</td>
+                  </tr>
+
+                </table>
+
+                <h2>Table with no headings</h2>
+                <table border="1">
+
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>555-4549</td>
+                  </tr>
+
+                  <tr>
+                    <td>Sam</td>
+                    <td>Davis</td>
+                    <td>333-4549</td>
+                  </tr>
+
+                  <tr>
+                    <td>Billie</td>
+                    <td>Jean</td>
+                    <td>777-4549</td>
+                  </tr>
+
+                </table>
+
+                <h2>Formatting Tables</h2>
+                <table>
+
+                  <caption>Contact Information</caption>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone</th>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>555-1212</td>
+                  </tr>
+                  <tr>
+                    <td>Sally</td>
+                    <td>Smith</td>
+                    <td>555-1123</td>
+                  </tr>
+                  <tr>
+                    <td>Sam</td>
+                    <td>Jones</td>
+                    <td>555-4321</td>
+                  </tr>
+                </table>
+
+                <h2>Table Width</h2>
+
+                <table border="1" Width="90%">
+                    <caption>Contact Information</caption>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Phone</th>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>555-1212</td>
+                </tr>
+                <tr>
+                  <td>Sally</td>
+                  <td>Smith</td>
+                  <td>555-1123</td>
+                </tr>
+                <tr>
+                  <td>Sam</td>
+                  <td>Jones</td>
+                  <td>555-4321</td>
+                </tr>
+              </table>
+
+              <h2>Table Width</h2>
+
+              <table border="1" Width="90%">
+                  <caption>Contact Information</caption>
+              <tr bgcolor="palegreen">
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td bgcolor="red">555-1212</td> <!-- If you want to change the color of a single cell rather than of an entire row, you can add the bgcolor property to a <th> or <td> tag instead -->
+              </tr>
+              <tr>
+                <td>Sally</td>
+                <td>Smith</td>
+                <td>555-1123</td>
+              </tr>
+              <tr>
+                <td>Sam</td>
+                <td>Jones</td>
+                <td>555-4321</td>
+              </tr>
+            </table>
+
+            <h2>Cells that Span Multiple Columns</h2>
+
+            <table border="1" width="90%">
+    <caption>Contact Information</caption>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Phone</th>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>555-1212</td>
+    </tr>
+    <tr>
+        <td>Sally</td>
+        <td>Smith</td>
+        <td>555-1123</td>
+    </tr>
+    <tr>
+        <td>Sam</td>
+        <td>Jones</td>
+        <td>555-4321</td>
+    </tr>
+ </table>
+
+
+ <h2>Cells that span Multiple Rows</h2>
+
+ <table border="1" width="90%">
+     <caption>Contact Information</caption>
+     <tr>
+         <th>Category</th>
+         <th colspan="2">Name</th>
+         <th>Phone</th>
+     </tr>
+     <tr>
+         <td rowspan="3">Friends:</td>
+         <td>John</td>
+         <td>Doe</td>
+         <td>555-1212</td>
+     </tr>
+     <tr>
+         <td>Sally</td>
+         <td>Smith</td>
+         <td>555-1123</td>
+     </tr>
+     <tr>
+         <td>Sam</td>
+         <td>Jones</td>
+         <td>555-4321</td>
+     </tr>
+ </table>
+ 
+          </body>
+</html>
