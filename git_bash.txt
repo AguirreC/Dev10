@@ -1,0 +1,32 @@
+git Git Bash- Notes
+
+Vidoes:
+<--(Config User.name/User.email) https://www.youtube.com/watch?v=yDntCIs-IJM&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx&index=2-->
+
+<--(Creating Repository) https://www.youtube.com/watch?v=spr0ZHC2x2o&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx&index=3-->
+
+<--(Commit) https://www.youtube.com/watch?v=7Ab5DIWYUMw&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx&index=4 -->
+
+
+user.name = ******
+user.email = ******
+
+*Clear Screen: clear
+*HELP!!: git help
+*Check settings: git config --list
+*Set user.name: git config --global user.name "<USERNAME>"
+*Set user.email: git config --global user.email "<EMAIL>"
+
+*pwd: currnet location
+*ls: list of files in current folder
+*cd: change directory/folder (cd /c/- - - /- - -.ect )
+*cd ~ : home 
+
+
+*git add --all
+* git status
+*git commit -m "TEXT"
+*git push
+rm -f .git/index.lock - Another git process seems to be running in this repository
+
+
